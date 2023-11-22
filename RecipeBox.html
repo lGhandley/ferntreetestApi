@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Grandma's Recipes</title>
+   <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="stylesheet" href="recipesstyle.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script>
+
+async function populate() {
+
+const requestURL = 'recipesList.json';
+const request = new Request(requestURL);
+
+const response = await fetch(request);
+const recipesList = await response.json();
+
+populateHeader(recipesList);
+populateRecipes(recipesList);
+
+}
+
+function populateHeader(obj) {
+const header = document.querySelector('header');
+const myH1 = document.createElement('h1');
+myH1.textContent = obj.recipesTitle;
+header.appendChild(myH1);
+
+const myPara = document.createElement('p');
+myPara.textContent = `Hometown: ${obj.homeTown} || Formed: ${obj.formed}`;
+header.appendChild(myPara);
+}
+
+function populateRecipes(obj) {
+const section = document.querySelector('section');
+const recipeIndex = obj.recipes;
+
+for (const recipeSingle of recipeIndex) {
+  const myArticle = document.createElement('article');
+  const myH2 = document.createElement('h2');
+  const myPara1 = document.createElement('p');
+  const myPara2 = document.createElement('p');
+  const myPara3 = document.createElement('p');
+  const myList = document.createElement('ul');
+
+  myH2.textContent = recipeSingle.title;
+  myPara1.textContent = `Secret identity: ${recipeSingle.title}`;
+  myPara2.textContent = `Age: ${recipeSingle.age}`;
+  myPara3.textContent = 'Method:';
+
+  const ingredientsList = recipeSingle.ingredients;
+  for (const singleIngredient of ingredients) {
+    const listItem = document.createElement('li');
+    listItem.textContent = singleIngredient;
+    myList.appendChild(listItem);
+  }
+
+  myArticle.appendChild(myH2);
+  myArticle.appendChild(myPara1);
+  myArticle.appendChild(myPara2);
+  myArticle.appendChild(myPara3);
+  myArticle.appendChild(myList);
+
+  section.appendChild(myArticle);
+}
+}
+
+populate();
+      </script>
+        </body>
+</html>
