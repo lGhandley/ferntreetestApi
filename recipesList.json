@@ -1,0 +1,34 @@
+
+
+{"recipesTitle" : "Grandma's Recipes",
+  "recipes" : [
+    {
+      "title" : "Dan Jukes",
+      "ingredients" : [
+        "item1",
+        "item2",
+        "item3"
+      ],
+      "method" : "bake it at 350F for 30 min"
+    },
+      {
+      "title" : "Dan Jukes",
+      "ingredients" : [
+        "item1",
+        "item2",
+        "item3"
+      ],
+      "method" : "bake it at 350F for 30 min"
+    },
+      {
+      "title" : "Dan Jukes",
+      "ingredients" : [
+        "item1",
+        "item2",
+        "item3"
+      ],
+      "method" : "bake it at 350F for 30 min"
+    }
+    ]
+}
+
