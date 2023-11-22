@@ -18,7 +18,7 @@
         "item2",
         "item3"
       ],
-      "method" : "bake it at 350F for 30 min"
+      "method" : "saute meat, veggies and boil for 1 hour"
     },
       {
       "title" : "Goulash",
@@ -27,7 +27,7 @@
         "item2",
         "item3"
       ],
-      "method" : "bake it at 350F for 30 min"
+      "method" : "Assemble cooked macaroni, veggies and meat"
     }
     ]
 }
