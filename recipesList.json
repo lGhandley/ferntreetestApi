@@ -3,7 +3,7 @@
 {"recipesTitle" : "Grandma's Recipes",
   "recipes" : [
     {
-      "title" : "Dan Jukes",
+      "title" : "Banana Bread",
       "ingredients" : [
         "item1",
         "item2",
@@ -12,7 +12,7 @@
       "method" : "bake it at 350F for 30 min"
     },
       {
-      "title" : "Dan Jukes",
+      "title" : "Beef Stew",
       "ingredients" : [
         "item1",
         "item2",
@@ -21,7 +21,7 @@
       "method" : "bake it at 350F for 30 min"
     },
       {
-      "title" : "Dan Jukes",
+      "title" : "Goulash",
       "ingredients" : [
         "item1",
         "item2",
