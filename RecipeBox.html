@@ -50,15 +50,17 @@ function populateRecipes(obj) {
   section.className = 'blog-card';
   const recipeMethod = obj.method;
 
-    const myH5 = document.createElement('h5');
-    myH5.textContent = "Method:";
-  
+  const myArticle = document.createElement("article");
+  const myH5 = document.createElement('h5');
  const myPara2 = document.createElement('p');
+  
+  myH5.textContent = "Method:";
   myPara2.textContent = obj.recipes[2].method;
 
-  section.appendChild(myH5);
-  section.appendChild(myPara2);
- 
+  myArticle.appendChild(myH5);
+  myArticle.appendChild(myPara2);
+
+  section.appendChild(myArticle);
 
 }
 
