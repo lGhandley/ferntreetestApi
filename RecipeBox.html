@@ -49,33 +49,12 @@ function populateRecipes(obj) {
 const section = document.querySelector('section');
 const recipeIndex = obj.recipes;
 
-for (const recipeSingle of recipeIndex) {
-  const myArticle = document.createElement('article');
-  const myH2 = document.createElement('h2');
-  const myPara1 = document.createElement('p');
-  const myPara2 = document.createElement('p');
-  const myPara3 = document.createElement('p');
-  const myList = document.createElement('ul');
 
-  myH2.textContent = recipeSingle.title;
-  myPara1.textContent = `Secret identity: ${recipeSingle.title}`;
-  myPara2.textContent = `Age: ${recipeSingle.age}`;
-  myPara3.textContent = 'Method:';
+const ingredient = ingredients.obj
 
-  const ingredientsList = recipeSingle.ingredients;
-  for (const singleIngredient of ingredients) {
-    const listItem = document.createElement('li');
-    listItem.textContent = singleIngredient;
-    myList.appendChild(listItem);
-  }
-
-  myArticle.appendChild(myH2);
-  myArticle.appendChild(myPara1);
-  myArticle.appendChild(myPara2);
-  myArticle.appendChild(myPara3);
-  myArticle.appendChild(myList);
-
-  section.appendChild(myArticle);
+for (const singleIngredient of ingredient) {
+alert(singleIngredient);
+}
 }
 }
 
