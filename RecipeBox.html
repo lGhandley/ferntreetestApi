@@ -47,28 +47,13 @@ header.appendChild(myPara);
 
 function populateRecipes(obj) {
 const section = document.querySelector('section');
-const recipeIndex = obj.recipes;
 
-
-const ingredient = ingredients.obj
-
-for (const singleIngredient of ingredient)
-
-  {
-      const listItem = document.createElement("li");
-      listItem.textContent = singleIngredient;
-      myList.appendChild(listItem);
-    }
   
-  myArticle.appendChild(myH2);
-  myArticle.appendChild(myPara1);
-  myArticle.appendChild(myPara2);
-  myArticle.appendChild(myPara3);
-  myArticle.appendChild(myList);
+const listItem = document.createElement("li");
+const ingredient = $obj.recipes[0].ingredients
+    listItem.textContent = singleIngredient;
+      myList.appendChild(listItem);
 
-  section.appendChild(myArticle);
-}
-}
 
 populate();
       </script>
