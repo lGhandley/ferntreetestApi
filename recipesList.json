@@ -1,7 +1,7 @@
 {
     "recipesTitle": "Grandma's Recipes",
-    "1": "casseroles",
-    "2": "desserts",
+    "Section1": "casseroles",
+    "Section2": "desserts",
     "recipes": [
         {
             "title": "Banana Bread",
