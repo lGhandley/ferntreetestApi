@@ -59,8 +59,6 @@ function populateRecipes(obj) {
   content.className = 'blog-content';
   const H5One = document.createElement("h5");
   const myPara1 = document.createElement("p");
-const mySpan1 = document.createElement("span");
-    myspan1.className = 'dots';
   
   const H5Two = document.createElement("h5");
  const myPara2 = document.createElement("p");
@@ -73,7 +71,6 @@ myBtn.className = 'read btn';
   myPara2.textContent = obj.recipes[0].ingredients;
   H5Two.textContent = "Method:";
   myPara2.textContent = obj.recipes[0].method;
-  mySpan1.textContent = "...";
   myBtn.textContent = "read more";
 
 myArticle.appendChild(cardHeader);  
@@ -81,7 +78,6 @@ myArticle.appendChild(cardHeader);
   myArticle.appendChild(content);
   myArticle.appendChild(H5One);
   myArticle.appendChild(myPara1);
-  myArticle.appendChild(mySpan1);
   myArticle.appendChild(H5Two);
   myArticle.appendChild(myPara2);
   myArticle.appendChild(myBtn);
