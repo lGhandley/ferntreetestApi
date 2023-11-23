@@ -48,7 +48,7 @@ header.appendChild(myPara);
 function populateRecipes(obj) {
   const section = document.querySelector("section");
  const myPara2 = document.createElement('p');
-  myPara2.textContent = obj.recipes.ingredients;
+  myPara2.textContent = obj.recipes[1].ingredients;
   section.appendChild(myPara2);
   
 }
