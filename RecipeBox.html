@@ -47,11 +47,10 @@ header.appendChild(myPara);
 
 function populateRecipes(obj) {
   const section = document.querySelector("section");
- const myList = document.createElement("ul");
+ const myPara2 = document.createElement('p');
+  myPara2.textContent = obj.recipesTitle;
+  section.appendChild(myPara2);
   
-const listItem = document.createElement("li");
-    listItem.textContent = `${obj.recipes[0].ingredients}`;
-      myList.appendChild(listItem);
 }
 
 populate();
