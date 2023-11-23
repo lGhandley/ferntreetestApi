@@ -48,10 +48,15 @@ header.appendChild(myPara);
 function populateRecipes(obj) {
   const section = document.querySelector("section");
   section.className = 'blog-card';
- const myPara2 = document.createElement('p');
-  myPara2.textContent = obj.recipes[1].ingredients;
-  section.appendChild(myPara2);
+  const recipeMethod = obj.method;
   
+ const myPara2 = document.createElement('p');
+  myPara2.textContent = obj.recipes[2].method;
+
+  const myH5 = document.createElement('h5');
+  myH5.textContent = "Method";
+  myPara2.appendChild(myH5);
+  section.appendChild(myPara2);
 }
 
 populate();
