@@ -46,14 +46,13 @@ header.appendChild(myPara);
 }
 
 function populateRecipes(obj) {
-const section = document.querySelector('section');
-
+  const section = document.querySelector("section");
+ const myList = document.createElement("ul");
   
 const listItem = document.createElement("li");
-const ingredient = $obj.recipes[0].ingredients
-    listItem.textContent = singleIngredient;
+    listItem.textContent = `${obj.recipes[0].ingredients}`;
       myList.appendChild(listItem);
-
+}
 
 populate();
       </script>
