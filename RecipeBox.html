@@ -53,10 +53,12 @@ function populateRecipes(obj) {
     const myH5 = document.createElement('h5');
     myH5.textContent = "Method";
  const myPara2 = document.createElement('p');
-  myH5.append(myPara2);
   myPara2.textContent = obj.recipes[2].method;
 
+     myH5.append(section);
   section.appendChild(myPara2);
+ 
+
 }
 
 populate();
