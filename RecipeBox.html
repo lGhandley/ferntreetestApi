@@ -52,9 +52,21 @@ const recipeIndex = obj.recipes;
 
 const ingredient = ingredients.obj
 
-for (const singleIngredient of ingredient) {
-alert(singleIngredient);
-}
+for (const singleIngredient of ingredient)
+
+  {
+      const listItem = document.createElement("li");
+      listItem.textContent = singleIngredient;
+      myList.appendChild(listItem);
+    }
+  
+  myArticle.appendChild(myH2);
+  myArticle.appendChild(myPara1);
+  myArticle.appendChild(myPara2);
+  myArticle.appendChild(myPara3);
+  myArticle.appendChild(myList);
+
+  section.appendChild(myArticle);
 }
 }
 
