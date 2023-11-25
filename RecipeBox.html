@@ -69,7 +69,7 @@ myBtn.className = 'read btn';
   myH3.textContent = obj.recipes[0].title;
   H5One.textContent = "Ingredients:";
 
-  const ingredient = obj.recipes.ingredients;
+  const ingredient = obj.recipes[0].ingredients;
     for (const ingredientSingle of ingredient) {
       const listItem = document.createElement("li");
       listItem.textContent = ingredientSingle;
