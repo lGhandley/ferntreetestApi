@@ -69,10 +69,10 @@ function populateRecipes(obj) {
 myBtn.className = 'read btn';
 
 
-  myH3.textContent = obj.recipes.title;
+  myH3.textContent = singleRecipe.title;
   H5One.textContent = "Ingredients:";
 
-  const ingredient = obj.recipes.ingredients;
+  const ingredient = singleRecipe.ingredients;
     for (const ingredientSingle of ingredient) {
       const listItem = document.createElement("li");
       listItem.textContent = ingredientSingle;
@@ -80,7 +80,7 @@ myBtn.className = 'read btn';
     }
   
   H5Two.textContent = "Method:";
-  myPara2.textContent = obj.recipes.method;
+  myPara2.textContent = singleRecipe.method;
   myBtn.textContent = "read more";
 
 myArticle.appendChild(cardHeader);  
