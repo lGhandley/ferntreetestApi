@@ -58,8 +58,8 @@ function populateRecipes(obj) {
   const content = document.createElement("div");
   content.className = 'blog-content';
   const H5One = document.createElement("h5");
-  const myPara1 = document.createElement("p");
-  
+  const myList = document.createElement("ul");
+
   const H5Two = document.createElement("h5");
  const myPara2 = document.createElement("p");
   const myBtn = document.createElement("button");
@@ -77,11 +77,10 @@ myArticle.appendChild(cardHeader);
   cardHeader.appendChild(myH3);
   myArticle.appendChild(content);
   content.appendChild(H5One);
-  content.appendChild(myPara1);
+  content.appendChild(myList);
   content.appendChild(H5Two);
   content.appendChild(myPara2);
   content.appendChild(myBtn);
-
 
 
   section.appendChild(myArticle);
