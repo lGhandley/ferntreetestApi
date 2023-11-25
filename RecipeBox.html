@@ -49,7 +49,10 @@ header.appendChild(myPara);
 function populateRecipes(obj) {
   const section = document.querySelector("section");
   section.className = 'blog-cards';
+ const recipesIndex = obj.recipes;
 
+  for (const singleRecipe of recipesIndex) {
+  
   const myArticle = document.createElement("article");
   myArticle.className = 'blog-card';
   const cardHeader = document.createElement("header");
@@ -66,10 +69,10 @@ function populateRecipes(obj) {
 myBtn.className = 'read btn';
 
 
-  myH3.textContent = obj.recipes[0].title;
+  myH3.textContent = obj.recipes.title;
   H5One.textContent = "Ingredients:";
 
-  const ingredient = obj.recipes[0].ingredients;
+  const ingredient = obj.recipes.ingredients;
     for (const ingredientSingle of ingredient) {
       const listItem = document.createElement("li");
       listItem.textContent = ingredientSingle;
@@ -77,7 +80,7 @@ myBtn.className = 'read btn';
     }
   
   H5Two.textContent = "Method:";
-  myPara2.textContent = obj.recipes[0].method;
+  myPara2.textContent = obj.recipes.method;
   myBtn.textContent = "read more";
 
 myArticle.appendChild(cardHeader);  
@@ -92,6 +95,7 @@ myArticle.appendChild(cardHeader);
 
   section.appendChild(myArticle);
 
+}
 }
 
 populate();
