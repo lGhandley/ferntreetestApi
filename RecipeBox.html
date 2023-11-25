@@ -72,11 +72,9 @@ myBtn.className = 'read btn';
   const ingredient = obj.recipes.ingredients;
     for (const ingredientSingle of ingredient) {
       const listItem = document.createElement("li");
-      listItem.textContent = power;
+      listItem.textContent = ingredientSingle;
       myList.appendChild(listItem);
     }
-
-  obj.recipes[0].ingredients;
   
   H5Two.textContent = "Method:";
   myPara2.textContent = obj.recipes[0].method;
